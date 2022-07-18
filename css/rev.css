@@ -1,0 +1,448 @@
+/*============= Start Global FrameWork*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media(max-width:767px) {
+    .container {
+        width: 470px;
+    }
+    .home .values .row .part {
+        width: 100%;
+    }
+    .home .values .row {
+        padding: 40px 10px;
+    }
+    .home .values .row .part p {
+        margin-bottom: 20px;
+    }
+    .aboutMe .row .photo {
+        margin-bottom: 20px;
+    }
+    .mySkills .row .info {
+        border-bottom: 2px solid #666;
+        padding-bottom: 10px;
+    }
+    .portfolio .slider>div {
+        float: left;
+        width: 45%;
+        height: 250px;
+        margin: 10px;
+    }
+    .portfolio .slider>div img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 10px 10px 10px #ccc;
+    }
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 750px;
+    }
+    .home .values .row {
+        display: flex;
+        padding: 60px 40px;
+    }
+    .home .values .row .part {
+        margin: 0 10px;
+        width: 33.333333333%;
+    }
+    .aboutMe .row {
+        display: flex;
+    }
+    .aboutMe .row .photo {
+        width: 40%;
+    }
+    .aboutMe .info {
+        padding: 50px;
+        width: 60%;
+    }
+    .mySkills .row .info {
+        border-bottom: 2px solid #666;
+        padding-bottom: 10px;
+    }
+    .testimonials .row .part {
+        display: flex;
+    }
+    .testimonials .row .part .MyEducation {
+        margin-right: 10px;
+    }
+    .portfolio .slider>div {
+        float: left;
+        width: 30.3333%;
+        height: 250px;
+        margin: 10px;
+    }
+    .portfolio .slider>div img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 10px 10px 10px #ccc;
+    }
+    .contact .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
+        color: var(--white-color);
+    }
+    .contact .row .address {
+        width: 55%;
+    }
+}
+
+@media(min-width:992px) {
+    .container {
+        width: 970px;
+    }
+    .mySkills .row {
+        display: flex;
+    }
+    .mySkills .row .info {
+        width: 50%;
+        border: none;
+        margin-right: 10px;
+    }
+    .mySkills .row .progress {
+        width: 50%;
+    }
+    .resume .row {
+        padding: 30px 100px;
+    }
+    .features .row {
+        padding: 30px 100px;
+    }
+    .portfolio .row {
+        padding: 50px 100px;
+    }
+}
+
+@media(min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+    .aboutMe .info .web {
+        float: left;
+        width: 45%;
+    }
+}
+
+ :root {
+    --grn-color: #07d44b;
+    --bck-ground: #f3f3f3;
+    --white-color: #fff;
+}
+
+h2 {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #888;
+    line-height: 1.6;
+}
+
+button {
+    background: none;
+    border: 1px solid var(--grn-color);
+    color: var(--grn-color);
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.flx {
+    display: flex;
+}
+
+.txt-align {
+    text-align: center;
+}
+
+
+/*============= End Global FrameWork*/
+
+
+/* ============= start header ============= */
+
+.home .slider {
+    padding-top: 200px;
+    background-image: url('../imgs/01.jfif');
+    background-size: cover;
+    height: 400px;
+    color: var(--white-color);
+}
+
+.home .slider h1 {
+    border-top: 1px solid var(--white-color);
+    border-bottom: 1px solid var(--white-color);
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.home .slider button {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.home .navbar {
+    background-color: #252f32;
+}
+
+.home .navbar .row {
+    padding: 20px 40px;
+}
+
+.home .navbar .row p {
+    width: 40%;
+    color: var(--grn-color);
+    text-transform: uppercase;
+}
+
+.home .navbar .row span {
+    color: var(--white-color);
+}
+
+.home .navbar .links a {
+    text-decoration: none;
+    color: var(--white-color);
+    margin-left: 10px;
+}
+
+.home .navbar .links a:hover,
+.home .navbar .links a.active {
+    color: var(--grn-color);
+}
+
+
+/* ============= End header ============= */
+
+
+/* ============= start  About Me ============= */
+
+.aboutMe .row {
+    background-color: var(--bck-ground)
+}
+
+.aboutMe .row .photo img {
+    width: 100%;
+}
+
+.aboutMe .info>p:last-of-type {
+    margin: 10px 0;
+}
+
+.aboutMe .info .web h2 i {
+    color: var(--grn-color);
+}
+
+.aboutMe .info .web {
+    margin: 10px 5px;
+}
+
+
+/* ============= End  About Me ============= */
+
+
+/* ============= Start My Skills============= */
+
+.mySkills .row {
+    padding: 40px;
+}
+
+.mySkills .row .info p:last-of-type {
+    margin-top: 15px;
+}
+
+.mySkills .row .progress div {
+    height: 25px;
+    background-color: var(--bck-ground);
+    margin-bottom: 10px;
+}
+
+.mySkills .row .progress span {
+    height: 25px;
+    background-color: var(--grn-color);
+    display: block;
+    line-height: 25px;
+    text-align: right;
+    color: var(--white-color);
+}
+
+
+/* ============= End My Skills ============= */
+
+
+/* ============= Start Resume ============= */
+
+.resume .row {
+    padding: 30px 20px;
+    background-color: var(--bck-ground);
+}
+
+
+/* ============= End Resume ============= */
+
+
+/* ============= Start Testimonials ============= */
+
+.testimonials .row .part {
+    padding: 20px 0;
+}
+
+.testimonials .row .part .info span {
+    background-color: var(--grn-color);
+    color: var(--white-color);
+    padding: 3px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.testimonials .row h4 {
+    color: #777;
+}
+
+.testimonials .row p {
+    margin-bottom: 25px;
+}
+
+.testimonials .row p:last-of-type {
+    margin-top: 15px;
+}
+
+
+/* ============= End Testimonials ============= */
+
+
+/* ============= Start Features ============= */
+
+.features .row {
+    padding: 30px 20px;
+    background-color: var(--bck-ground);
+}
+
+.features .row ul {
+    list-style: none;
+}
+
+.features .row ul li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--grn-color);
+}
+
+.features .row ul li.active {
+    background-color: var(--grn-color);
+}
+
+.features .row ul li:hover {
+    background-color: var(--grn-color);
+}
+
+
+/* ============= End Features ============= */
+
+
+/* ============= Start Portfolio ============= */
+
+.portfolio {
+    margin-bottom: 50px;
+}
+
+.portfolio .row {
+    padding: 50px 20px;
+}
+
+.portfolio .slider {
+    overflow: hidden;
+}
+
+
+/* ============= End Portfolio ============= */
+
+
+/* ============= Start Contact ============= */
+
+.contact {
+    background-color: #252f31;
+}
+
+.contact .row .address p {
+    margin-bottom: 10px;
+}
+
+.contact .row .address b {
+    color: var(--white-color);
+}
+
+.contact .row label {
+    display: block;
+    margin: 5px 0;
+}
+
+.contact .row input {
+    width: 300px;
+    height: 30px;
+    background-color: #888;
+}
+
+.contact .row textarea {
+    display: block;
+    background-color: #888;
+    width: 300px;
+    margin: 5px 0;
+}
+
+.contact .row button {
+    border: none;
+    color: var(--white-color);
+    background-color: #444;
+    margin-bottom: 5px;
+}
+
+
+/* ============= End Contact ============= */
+
+
+/* ============= Start Footer ============= */
+
+.footer {
+    background-color: #444;
+    color: #888;
+}
+
+.footer span {
+    display: block;
+    padding: 10px 0;
+}
+
+.footer ul {
+    list-style: none;
+    text-align: center;
+}
+
+.footer ul i {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer ul i:hover {
+    cursor: pointer;
+    color: var(--grn-color);
+}
+
+
+/* ============= End Footer ============= */
